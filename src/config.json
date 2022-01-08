@@ -1,0 +1,17 @@
+{
+    "DB": {
+        "URL": "mongodb://localhost:27017",
+        "Name": "TW"
+    },
+    "API": {
+        "Port": 8888,
+        "ContentPath": "/root/data"
+    },
+    "Canvas": {
+        "Description": "To zrobił Komarex1234, jak nie działa to trudno..."
+    },
+    "Minner": {
+        "World": "pl174",
+        "Domain": "plemiona.pl"
+    }
+}
