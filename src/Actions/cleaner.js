@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb');
 const config = require('../config.json');
+const { player, ally, kill_def, kill_att, kill_all } = require('./endpoint.handler')
 const client = new MongoClient(config.DB.URL);
 
 module.exports = async () => {

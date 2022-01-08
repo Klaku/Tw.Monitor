@@ -5,7 +5,7 @@
     },
     "API": {
         "Port": 8888,
-        "ContentPath": "/root/data"
+        "ContentPath": "C://TMP"
     },
     "Canvas": {
         "Description": "To zrobił Komarex1234, jak nie działa to trudno..."
