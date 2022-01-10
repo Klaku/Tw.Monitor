@@ -1,6 +1,6 @@
 const urldecode = (url) => {
     return decodeURIComponent(url.replace(/\+/g, ' '));
-}
+};
 
 module.exports = {
     player: {
@@ -14,12 +14,12 @@ module.exports = {
                 villages: Number(cells[3]),
                 points: Number(cells[4]),
                 rank: Number(cells[5]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: (item) => {
-            return item.points > 100
-        }
+            return item.points > 100;
+        },
     },
     village: {
         name: 'village',
@@ -32,12 +32,12 @@ module.exports = {
                 y: Number(cells[3]),
                 owner: Number(cells[4]),
                 points: Number(cells[5]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: (item) => {
             return true;
-        }
+        },
     },
     ally: {
         name: 'ally',
@@ -52,12 +52,12 @@ module.exports = {
                 points: Number(cells[5]),
                 allpoints: Number(cells[6]),
                 rank: Number(cells[7]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: () => {
             return true;
-        }
+        },
     },
     kill_all: {
         name: 'kill_all',
@@ -66,12 +66,12 @@ module.exports = {
             return {
                 player: Number(cells[1]),
                 score: Number(cells[2]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: () => {
             return true;
-        }
+        },
     },
     kill_att: {
         name: 'kill_att',
@@ -80,12 +80,12 @@ module.exports = {
             return {
                 player: Number(cells[1]),
                 score: Number(cells[2]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: () => {
             return true;
-        }
+        },
     },
     kill_def: {
         name: 'kill_def',
@@ -94,11 +94,11 @@ module.exports = {
             return {
                 player: Number(cells[1]),
                 score: Number(cells[2]),
-                created: new Date()
-            }
+                created: new Date(),
+            };
         },
         filter: () => {
             return true;
-        }
-    }
-}
+        },
+    },
+};
