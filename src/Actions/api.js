@@ -14,5 +14,5 @@ app.get("/", (request, response) => {
 app.use(express.static(config.API.ContentPath));
 
 module.exports = () => {
-  https.createServer(https_options, app).listen(config.API.Port);
+  app.listen(config.API.Port);
 };
