@@ -62,8 +62,8 @@ module.exports = async () => {
                             name: player.name,
                             points: {
                                 now: player.points,
-                                h24: playerData.filter(Filter24h).sort(SortAscending)[0].points,
-                                d7: playerData.sort(SortAscending)[0].points,
+                                h24: playerData.filter(Filter24h).sort(SortDescending)[0].points,
+                                d7: playerData.sort(SortDescending)[0].points,
                             },
                             villages: {
                                 now: player.villages,
